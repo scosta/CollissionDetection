@@ -40,6 +40,9 @@
   <ItemGroup>
     <Text Include="world_map.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C3F274D8-9963-4E0C-BA39-257C280DE0EA}</ProjectGuid>
     <RootNamespace>CollisionDetection</RootNamespace>

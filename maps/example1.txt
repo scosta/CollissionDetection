@@ -1,0 +1,118 @@
+#####################3D collision Detection World File Structure#########################
+#
+# This is a template file that can be used to create 3d worlds for use with my
+# collision detection demo.  The world can consist of walls, balls and boxes.
+# In each section the number of the walls, balls and boxes must be specified as
+# well as the dimensions of each object.
+#
+# Users can specifiy colours and material properties for their object by using
+# numerical identifiers.  The following lists the complete set of colours and
+# textures available to the user.
+#
+# Textures:	[-1]	NONE
+#		[0]	LEAFS.BMP
+#		[1]	RINKSIDE.BMP
+#		[2]	HNIC.BMP
+#		[3]	COBBLESTONE.BMP
+#		[4]	COBBLESTONE2.BMP
+#		[5]	ELECTRIC_BIG.BMP
+#		[6]	CHECKER.BMP
+#		[7]	TWIRL.BMP
+#		[8]	MARBLE.BMP
+#		[9]	ELECTRIC.BMP
+#		[10]	GREEN.BMP
+#
+# Colours:	[-1]	NONE
+#		[0]	RED
+#		[1]	GREEN
+#		[2]	BLUE
+#		[3]	YELLOW
+#		[4]	PURPLE
+#		[5]	ORANGE
+#		[6]	LIGHT BLUE
+#		[7]	WHITE
+#		[8]	LIGHT GREY
+#		[9]	DARK GREY
+#		[10]	BLACK
+#		[11]	GLASS
+#		[12]	CLEAR
+#
+# Author: Steve Costa (stevencosta@hotmail.com)
+#
+#########################################################################################
+
+#----------------------------------------------------------------------------------------
+# File name:	world_map.txt
+# Author: 	Steve Costa
+# Description:	This file describes a 3d setting consisting of 2 rooms connected by
+#		a ramp with boxes and balls moving around the room.
+#----------------------------------------------------------------------------------------
+
+#########################################################################################
+#				  WALLS / FLOORS / PLANES 				#
+#########################################################################################
+
+#NUMBER OF WALLS
+
+numwalls = 5
+
+# ONE LINE WILL CONTAIN THE MIN AND MAX COORDINATE OF THE WALL ON THE X-Y AXIS
+# THE SECOND LINE WILL CONTAIN THE TRANSLATION VECTOR AND THE ROTATION VALUE FOR THE WALL
+#----------------------------------------------------------------------------------------
+#x-min		y-min		x-max		y-max		color		texture
+#x-trans	y-trans		z-trans		rot-type	theta
+#----------------------------------------------------------------------------------------
+
+#floor
+0.0f		-10.0f		10.0f		0.0f		-1		5
+0.0f		0.0f		-10.0f		1		-1.5708f
+
+#far wall
+0.0f		-5.0f		10.0f		0.0f		11		-1
+0.0f		5.0f		-10.0f		0		0.0f
+
+#left wall glass
+0.0f		-5.0f		10.0f		0.0f		11		-1
+0.0f		5.0f		0.0f		2		1.5708f
+
+#near wall glass
+0.0f		-5.0f		10.0f		0.0f		11		-1
+10.0f		5.0f		0.0f		2		3.1415f
+
+#right wall glass
+0.0f		-5.0f		10.0f		0.0f		11		-1
+10.0f		5.0f		-10.0f		2		-1.5708f
+
+#########################################################################################################################################
+#				  				BALLS					 				#
+#########################################################################################################################################
+
+#NUMBER OF BALLS
+
+numballs = 1
+
+# EACH LINE STORES THE ATTRIBUTES OF A SINGLE BALL
+#--------------------------------------------------------------------------------------------------------------------------------------
+#centre-x	centre-y	centre-z	radius		velocity-x	velocity-y	velocity-z	color		texture
+#--------------------------------------------------------------------------------------------------------------------------------------
+
+#User controlled ball
+#ball1
+5.0f		15.0f		-5.0f		0.5f		0.0f		0.0f		0.0f		-1		6
+
+
+#########################################################################################################################################################################
+#				  						BOXES		 									#
+#########################################################################################################################################################################
+
+#NUMBER OF BOXES
+
+numboxes = 0
+
+# EACH LINE STORES THE ATTRIBUTES OF A SINGLE BOX
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#min-x		min-y		min-z		max-x		max-y		max-z		velocity-x	velocity-y	velocity-z	color		texture
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+###################End of 3D collision Detection World File Structure####################
